@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="50%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Base Background with rounded corners -->
+  <rect width="512" height="512" rx="104" fill="url(#bg)"/>
+  
+  <!-- Outer Decorative Islamic Octagram Ring -->
+  <g transform="translate(256, 256)" stroke="url(#gold)" stroke-width="3" fill="none" opacity="0.4">
+    <rect x="-190" y="-190" width="380" height="380" rx="20"/>
+    <rect x="-190" y="-190" width="380" height="380" rx="20" transform="rotate(45)"/>
+    <circle r="160" stroke-width="1.5" stroke-dasharray="6 6"/>
+  </g>
+
+  <!-- Central Crescent & Star / Quran Motif -->
+  <g transform="translate(256, 240)">
+    <!-- Crescent Moon -->
+    <path d="M-20,-80 A95,95 0 1,0 65,75 A80,80 0 1,1 -20,-80 Z" fill="url(#gold)" filter="url(#glow)"/>
+    
+    <!-- 8-Pointed Star -->
+    <g transform="translate(45, -25) scale(0.4)" fill="url(#gold)">
+      <polygon points="0,-45 13,-14 45,0 13,14 0,45 -13,14 -45,0 -13,-14" />
+      <polygon points="0,-45 13,-14 45,0 13,14 0,45 -13,14 -45,0 -13,-14" transform="rotate(45)" />
+    </g>
+
+    <!-- Open Holy Quran Stylized Book Base -->
+    <g transform="translate(0, 95)">
+      <!-- Left Page -->
+      <path d="M-8,15 C-40,5 -80,-5 -105,-15 C-105,-5 -65,15 -10,32 Z" fill="#f8fafc" opacity="0.95"/>
+      <path d="M-10,32 C-65,15 -105,-5 -105,-15 L-105,-10 C-65,18 -10,35 -8,35 Z" fill="#e2e8f0"/>
+      <!-- Right Page -->
+      <path d="M8,15 C40,5 80,-5 105,-15 C105,-5 65,15 10,32 Z" fill="#f8fafc" opacity="0.95"/>
+      <path d="M10,32 C65,15 105,-5 105,-15 L105,-10 C65,18 10,35 8,35 Z" fill="#cbd5e1"/>
+      <!-- Rehal (Book Stand) -->
+      <path d="M-40,35 L40,85 M40,35 L-40,85" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="0" cy="60" r="6" fill="#fde047"/>
+    </g>
+  </g>
+
+  <!-- Prayer Beads (Tasbeeh Dots Ring) Arc -->
+  <g transform="translate(256, 420)" fill="url(#gold)">
+    <circle cx="-60" cy="0" r="5"/>
+    <circle cx="-40" cy="6" r="5"/>
+    <circle cx="-20" cy="10" r="6"/>
+    <circle cx="0" cy="12" r="7"/>
+    <circle cx="20" cy="10" r="6"/>
+    <circle cx="40" cy="6" r="5"/>
+    <circle cx="60" cy="0" r="5"/>
+  </g>
+</svg>

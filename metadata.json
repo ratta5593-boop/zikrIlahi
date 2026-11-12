@@ -1,0 +1,6 @@
+{
+  "name": "روحانی سلسلہ و اذکار - Silsila Azkar & Tafseer",
+  "description": "ایک جدید اور جامع اسلامی روحانی ایپ برائے اذکار، وظائف، قرآن و تفاسیر (بیان القرآن و تفہیم القرآن) اور پی ڈی ایف کتب خانہ مع آف لائن سپورٹ",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

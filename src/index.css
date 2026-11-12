@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-arabic: 'Amiri', 'Scheherazade New', 'Noto Sans Arabic', serif;
+    --font-urdu: 'Noto Nastaliq Urdu', 'Amiri', 'Jameel Noori Nastaleeq', serif;
+  }
+
+  body {
+    font-family: var(--font-urdu), system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Scheherazade New', 'Noto Sans Arabic', serif;
+  line-height: 2.1;
+}
+
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', 'Amiri', serif;
+  line-height: 2.4;
+}
+
+.font-sans-ur {
+  font-family: 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+}
+
+/* Islamic Geometric Subtle Background Pattern */
+.bg-islamic-pattern {
+  background-color: transparent;
+  background-image: radial-gradient(rgba(16, 185, 129, 0.08) 1.5px, transparent 1.5px),
+                    radial-gradient(rgba(217, 119, 6, 0.05) 1.5px, transparent 1.5px);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+}
+
+.dark .bg-islamic-pattern {
+  background-image: radial-gradient(rgba(52, 211, 153, 0.07) 1.5px, transparent 1.5px),
+                    radial-gradient(rgba(245, 158, 11, 0.04) 1.5px, transparent 1.5px);
+}
+
+/* Custom Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.45);
+}
